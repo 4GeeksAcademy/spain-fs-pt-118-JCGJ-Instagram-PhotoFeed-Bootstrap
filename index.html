@@ -34,7 +34,7 @@
                         <li><a class="dropdown-item" href="#">Profile</a></li>
                         <li><a class="dropdown-item" href="#">Accesibility</a></li>
                         <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                        <li><a class="dropdown-item link-danger" href="# text" > Log aut</a></li>
+                        <li><a class="dropdown-item link-danger" href="# text"> Log aut</a></li>
                     </ul>
                 </div>
                 <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -49,15 +49,16 @@
                             <div class="modal-body">
                                 <div class="mb-3">
                                     <label for="recipient-name" class="col-form-label"><b> Caption :</b></label>
-                                    <input type="text" placeholder="Add the caption of your post here" class="form-control p-4" id="recipient-name">
+                                    <input type="text" placeholder="Add the caption of your post here"
+                                        class="form-control p-4" id="recipient-name">
                                 </div>
                                 <div class="icons-modal d-flex flex-start ">
                                     <div class="icons-modal-camara p-2">
-                                       <i class="fas fa-camera  "></i>
-                                   </div>
-                                   <div class="icons-modal-maps p-2">
-                                       <i class="fas fa-location-dot"></i>
-                                   </div>   
+                                        <i class="fas fa-camera  "></i>
+                                    </div>
+                                    <div class="icons-modal-maps p-2">
+                                        <i class="fas fa-location-dot"></i>
+                                    </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -72,17 +73,113 @@
 
     </header>
     <main>
-        <section class="">
-            <div class="row">
-                <div class="col-4"><img src="" alt=""></div>
-                <div class="col-4"><img src="" alt=""></div>
-                <div class="col-4"><img src="" alt=""></div>
-                <div class="col-4"><img src="" alt=""></div>
-                <div class="col-4"><img src="" alt=""></div>
-                <div class="col-4"><img src="" alt=""></div>
+        <nav class="top-body-icons"> <!-- Botones de cambio -->
+            <ul class="nav nav-tabs justify-content-center mt-1" id="myTab" role="tablist">
+                <li class="nav-item " role="presentation">
+                    <a class="nav-link active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#gallery"
+                        type="button" role="tab">
+                        <i class="fa-solid fa-table-cells"></i>
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="post-tab" data-bs-toggle="tab" data-bs-target="#post" type="button"
+                        role="tab">
+                        <i class="fa-solid fa-square"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section class="post-gallery" id="gallery" role="tabpanel">
+            <div class="container-fluid">
+                <div class="row p-2">
+                    <div class="col-4"><img class="img-fluid p-1"
+                            src="https://wallpapers.com/images/high/messi-holding-ballond-or-award-0gtyk4othw774r5u.webp"
+                            alt="camara" style="width: 100%; height: auto;"></div>
+                    <div class="col-4"><img class="img-fluid p-1"
+                            src="https://wallpapers.com/images/high/funny-cat-wearing-glasses-bvj5xawdlo3hshwe.webp"
+                            alt="tortuga" style="width: 100%; height: 100%;"></div>
+                    <div class="col-4"><img class="img-fluid p-1"
+                            src="https://wallpapers.com/images/high/free-background-fkj63i4wdceqvpvi.webp" alt="sunset"
+                            style="width: 100%; height: 100%;"></div>
+                    <div class="col-4"><img class="img-fluid p-1"
+                            src="https://wallpapers.com/images/high/snapping-turtle-walkingon-sand-kw0gzxogs855avvx.webp"
+                            alt="gat" style="width: 100%; height: auto;"></div>
+                    <div class="col-4"><img class="img-fluid p-1"
+                            src="https://wallpapers.com/images/high/photographer-pictures-r58kmqqx8hjg44dv.webp"
+                            alt="ordenador" style="width: 100%; height: auto;"></div>
+                    <div class="col-4"><img class="img-fluid p-1"
+                            src="https://wallpapers.com/images/high/ronaldo-messi-neymar-triumvirate-1scna4uvivka9cxe.webp"
+                            alt="beauti" style="width: 100%; height: 100%;"></div>
+                    <div class="col-4"><img class="img-fluid p-1"
+                            src="https://wallpapers.com/images/high/ronaldo-messi-neymar-triumvirate-1scna4uvivka9cxe.webp"
+                            alt="beauti" style="width: 100; height: 100%;"></div>
+                    <div class="col-4"><img class="img-fluid p-1"
+                            src="https://wallpapers.com/images/high/funny-cat-wearing-glasses-bvj5xawdlo3hshwe.webp"
+                            alt="tortuga" style="width: 100; height: 100%;"></div>
+                    <div class="col-4"><img class="img-fluid p-1"
+                            src="https://wallpapers.com/images/high/photographer-pictures-r58kmqqx8hjg44dv.webp"
+                            alt="ordenador" style="width: 100; height: auto;"></div>
+                </div>
+            </div>
+        </section>
+        <section class="post-instagram" id="post" role="tabpanel">
+            <div class="container">
+                <div class="post m-5 border border rounded-1">
+                    <div class="post-header d-flex justify-content-between mt-1 p-2">
+                        <h4>My Crazy dog Spark!</h4>
+                        <span>08/26</span>
+                    </div>
+                    <div class="pos-body-img ">
+                        <img class="img-fluid"
+                            src="https://cdn.pixabay.com/photo/2015/05/30/19/53/playing-puppies-790638_1280.jpg"
+                            alt="beautiful-dog" width="100%" height="auto">
+                    </div>
+                    <div class="post-footer-p  p-2">
+                        <strong>
+                            <p>210 Likes</p>
+                        </strong>
+                        <p>This is an example of a very good photo that you can post on istagram</p>
+                    </div>
+                </div>
+                  <div class="post m-5 border border rounded-1">
+                    <div class="post-header d-flex justify-content-between mt-1 p-2">
+                        <h4>My Crazy dog Spark!</h4>
+                        <span>08/26</span>
+                    </div>
+                    <div class="pos-body-img ">
+                        <img class="img-fluid"
+                            src="https://cdn.pixabay.com/photo/2015/05/30/19/53/playing-puppies-790638_1280.jpg"
+                            alt="beautiful-dog" width="100%" height="auto">
+                    </div>
+                    <div class="post-footer-p  p-2">
+                        <strong>
+                            <p>210 Likes</p>
+                        </strong>
+                        <p>This is an example of a very good photo that you can post on istagram</p>
+                    </div>
+                </div>
+                  <div class="post m-5 border border rounded-1">
+                    <div class="post-header d-flex justify-content-between mt-1 p-2">
+                        <h4>My Crazy dog Spark!</h4>
+                        <span>08/26</span>
+                    </div>
+                    <div class="pos-body-img ">
+                        <img class="img-fluid"
+                            src="https://cdn.pixabay.com/photo/2015/05/30/19/53/playing-puppies-790638_1280.jpg"
+                            alt="beautiful-dog" width="100%" height="auto">
+                    </div>
+                    <div class="post-footer-p  p-2">
+                        <strong>
+                            <p>210 Likes</p>
+                        </strong>
+                        <p>This is an example of a very good photo that you can post on istagram</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+
+
 
 
 
