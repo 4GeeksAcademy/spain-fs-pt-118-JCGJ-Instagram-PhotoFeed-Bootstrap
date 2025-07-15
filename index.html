@@ -4,18 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
     <title>Instagram Photo Feed con Bootstrap</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg  fixed-top bg-secondary bg-gradient p-2 d-flex-betew"
+        <nav class="navbar navbar-expand-lg  fixed-top bg-secondary bg-gradient p-12 d-flex-betew"
             style="--bs-bg-opacity: .5;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -27,7 +26,8 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
+                    <!-- aqui el famoso off-canva que ocupada todo la pantalla-->
+                <div class="offcanvas offcanvas-top mt-3" style="height:40vh;" tabindex="-1" id="navbarOffcanvasLg"
                     aria-labelledby="navbarOffcanvasLgLabel">
                     <div class="dropdown mr-3 align-self-end">
                         <button type="button" class="btn btn-success" data-bs-toggle="modal"
@@ -48,6 +48,7 @@
                         </ul>
                     </div>
                 </div>
+                                    <!--- termina el canvas-->
             </div>
         </nav>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -59,7 +60,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="mb-3 d-flex flex-column ">
-                            <label for="recipient-name" class="col-sm-2 col-md-4 col-lg-4orm-label"><b> Caption:</b></label>
+                            <label for="recipient-name" class="col-sm-12 col-md-6 col-lg-4orm-label"><b> Caption:</b></label>
                             <textarea name="comentarios" rows="3"
                                 cols="50"> Add the caption of your post here...</textarea>
                         </div>
@@ -83,7 +84,7 @@
         </div>
     </header>
     <main>
-        <div class="top-body-icons pt-5 mt-3"> <!-- Botones de cambio -->
+        <div class="top-body-icons pt-5 mt-3">          <!-- Botones de cambio -->
             <ul class="nav nav-tabs justify-content-center mt-1" id="myTab" role="tablist">
                 <li class="nav-item " role="presentation">
                     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
@@ -103,33 +104,33 @@
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
                     tabindex="0">
-                    <div class="container-fluid ">
-                        <div class="row x"> <!-- Gallery -->
-                            <div class="col-sm-2 col-md-4 col-lg-4"><img class="img-fluid p-1"
+                    <div class="container-fluid">
+                        <div class="row "> <!-- Gallery -->
+                            <div class="col-sm-12 col-md-6 col-lg-4"><img class="img-fluid p-1"
                                     src="https://wallpapers.com/images/high/messi-holding-ballond-or-award-0gtyk4othw774r5u.webp"
                                     alt="camara" style="width: 100%; height: auto;"></div>
-                            <div class="col-sm-2 col-md-4 col-lg-4"><img class="img-fluid p-1"
+                            <div class="col-sm-12 col-md-6 col-lg-4"><img class="img-fluid p-1"
                                     src="https://wallpapers.com/images/high/cooking-background-w14p7ee643kcmqbs.webp"
                                     alt="tortuga" style="width: 100%; height: 100%;"></div>
-                            <div class="col-sm-2 col-md-4 col-lg-4"><img class="img-fluid p-1"
+                            <div class="col-sm-12 col-md-6 col-lg-4"><img class="img-fluid p-1"
                                     src="https://wallpapers.com/images/high/free-background-fkj63i4wdceqvpvi.webp"
                                     alt="sunset" style="width: 100%; height: 100%;"></div>
-                            <div class="col-sm-2 col-md-4 col-lg-4"><img class="img-fluid p-1"
+                            <div class="col-sm-12 col-md-6 col-lg-4"><img class="img-fluid p-1"
                                     src="https://wallpapers.com/images/high/snapping-turtle-walkingon-sand-kw0gzxogs855avvx.webp"
                                     alt="gat" style="width: 100%; height: auto;"></div>
-                            <div class="col-sm-2 col-md-4 col-lg-4"><img class="img-fluid p-1"
+                            <div class="col-sm-12 col-md-6 col-lg-4"><img class="img-fluid p-1"
                                     src="https://wallpapers.com/images/high/best-beach-background-2960-x-1850-ucusq1wf6w8cb6xy.webp"
                                     alt="ordenador" style="width: 100%; height: auto;"></div>
-                            <div class="col-sm-2 col-md-4 col-lg-4"><img class="img-fluid p-1"
+                            <div class="col-sm-12 col-md-6 col-lg-4"><img class="img-fluid p-1"
                                     src="https://wallpapers.com/images/high/best-beach-background-2960-x-1850-rczqqjcyanyvb6iw.webp"
                                     alt="beauti" style="width: 100%; height: 100%;"></div>
-                            <div class="col-sm-2 col-md-4 col-lg-4"><img class="img-fluid p-1"
+                            <div class="col-sm-12 col-md-6 col-lg-4"><img class="img-fluid p-1"
                                     src="https://wallpapers.com/images/high/ronaldo-messi-neymar-triumvirate-1scna4uvivka9cxe.webp"
                                     alt="beauti" style="width: 100; height: 100%;"></div>
-                            <div class="col-sm-2 col-md-4 col-lg-4"><img class="img-fluid p-1"
+                            <div class="col-sm-12 col-md-6 col-lg-4"><img class="img-fluid p-1"
                                     src="https://wallpapers.com/images/high/funny-cat-wearing-glasses-bvj5xawdlo3hshwe.webp"
                                     alt="tortuga" style="width: 100; height: 100%;"></div>
-                            <div class="col-sm-2 col-md-4 col-lg-4"><img class="img-fluid p-1"
+                            <div class="col-sm-12 col-md-6 col-lg-4"><img class="img-fluid p-1"
                                     src="https://wallpapers.com/images/high/photographer-pictures-r58kmqqx8hjg44dv.webp"
                                     alt="ordenador" style="width: 100; height: auto;"></div>
                         </div>
@@ -138,7 +139,7 @@
                 <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
                     tabindex="0">
                     <div class="container-post-card d-flex justify-content-center bg-light">
-                        <div class="card mt-3 col-sm-2 col-md-4 col-lg-4">
+                        <div class="card mt-3 col-sm-12 col-md-6 col-lg-4">
                             <div class="card-header d-flex justify-content-between">
                                 <h5 class="card-title">My Crazy dog Spark!</h5>
                                 <span>08/26</span>
@@ -154,7 +155,7 @@
                         </div>
                     </div>
                     <div class="container-post-card d-flex justify-content-center bg-light">
-                        <div class="card mt-3 col-sm-2 col-md-4 col-lg-4">
+                        <div class="card mt-3 col-sm-12 col-md-6 col-lg-4">
                             <div class="card-header d-flex justify-content-between">
                                 <h5 class="card-title">These views are incredible! 🌴🌊!</h5>
                                 <span>05/26</span>
@@ -169,12 +170,12 @@
                         </div>
                     </div>
                     <div class="container-post-card d-flex justify-content-center bg-light">
-                        <div class="card mt-3 col-sm-2 col-md-4 col-lg-4">
+                        <div class="card mt-3 col-sm-12 col-md-6 col-lg-4">
                             <div class="card-header d-flex justify-content-between">
                                 <h5 class="card-title">The greatest player in history!</h5>
                                 <span>09/26</span>
                             </div>
-                            <img src="https://i.pinimg.com/736x/29/d3/a2/29d3a29ec65d8781498e82677e45e209.jpg"
+                            <img src="https://span.pinimg.com/736x/29/d3/a2/29d3a29ec65d8781498e82677e45e209.jpg"
                                 alt="beautiful-dog" width="100%" height="auto" class="img-fluid" alt="messi">
                             <div class="card-body">
                                 <p class="card-text fw-bold"> 1000k Likes </p>
