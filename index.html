@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg  fixed-top bg-secondary bg-gradient p-12 d-flex-betew"
+        <nav class="navbar navbar-expand-md  fixed-top bg-secondary bg-gradient"
             style="--bs-bg-opacity: .5;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -27,9 +27,9 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                     <!-- aqui el famoso off-canva que ocupada todo la pantalla-->
-                <div class="offcanvas offcanvas-top mt-3" style="height:40vh;" tabindex="-1" id="navbarOffcanvasLg"
+                <div class="offcanvas offcanvas-end " style="height:0vh;" tabindex="-1" id="navbarOffcanvasLg"
                     aria-labelledby="navbarOffcanvasLgLabel">
-                    <div class="dropdown mr-3 align-self-end">
+                    <div class="dropdown d-flex justify-content-end mt-2">
                         <button type="button" class="btn btn-success" data-bs-toggle="modal"
                             data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create a new post
                         </button>
@@ -48,7 +48,7 @@
                         </ul>
                     </div>
                 </div>
-                                    <!--- termina el canvas-->
+                                    <!--- termina el canvas y comienza el modal-->
             </div>
         </nav>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -104,8 +104,8 @@
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
                     tabindex="0">
-                    <div class="container-fluid">
-                        <div class="row "> <!-- Gallery -->
+                    <div class="container-fluid">                               <!-- Gallery -->
+                        <div class="row ">                      
                             <div class="col-sm-12 col-md-6 col-lg-4"><img class="img-fluid p-1"
                                     src="https://wallpapers.com/images/high/messi-holding-ballond-or-award-0gtyk4othw774r5u.webp"
                                     alt="camara" style="width: 100%; height: auto;"></div>
@@ -175,7 +175,7 @@
                                 <h5 class="card-title">The greatest player in history!</h5>
                                 <span>09/26</span>
                             </div>
-                            <img src="https://span.pinimg.com/736x/29/d3/a2/29d3a29ec65d8781498e82677e45e209.jpg"
+                            <img src="https://i.pinimg.com/originals/b2/04/37/b20437a3b88ae2dec3cb4df03c9da6f9.jpg"
                                 alt="beautiful-dog" width="100%" height="auto" class="img-fluid" alt="messi">
                             <div class="card-body">
                                 <p class="card-text fw-bold"> 1000k Likes </p>
